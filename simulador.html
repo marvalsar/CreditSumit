@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULADOR</title>
+    <link rel="stylesheet" href="./css/style1.css">
+</head>
+<body>
+    <div class="container"> <div class="simulador-card">
+            
+            <h2>Calcula tu Crédito</h2>
+            <p class="subtitle">Ingresa los datos para estimar tu cuota mensual.</p>
+
+            <form id="creditForm">
+                <div class="input-group">
+                    <label for="monto">Monto del Crédito ($)</label>
+                    <input type="number" id="monto" value="50000" min="1000" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="tasa">Tasa de Interés Mensual (%)</label>
+                    <input type="number" id="tasa" value="12" step="0.1" min="0.1" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="plazo">Plazo (Meses)</label>
+                    <select id="plazo" required>
+                        <option value="12">12 Meses</option>
+                        <option value="24">24 Meses</option>
+                        <option value="36" selected>36 Meses</option>
+                        <option value="48">48 Meses</option>
+                        <option value="60">60 Meses</option>
+                        <option value="60">120 Meses</option>
+                        <option value="60">180 Meses</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="calculate-btn">Simular</button>
+                <button type="button" class="reset-btn" id="resetButton">Borrar Información</button>
+            </form>
+
+            <div class="resultado">
+                <h3>Resumen de la Simulación</h3>
+                <p>Cuota Mensual Estimada:</p>
+                <div class="cuota-display" id="cuotaMensual">$ 0.00</div>
+                
+                <p class="detalle">Total a Pagar: <span id="totalPagar">$ 0.00</span></p>
+                <p class="detalle">Total de Intereses: <span id="totalIntereses">$ 0.00</span></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
