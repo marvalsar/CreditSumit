@@ -1,0 +1,160 @@
+ /*ESTIOLOS GENERALES*/
+
+body{  
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    background-color: rgb(244, 231, 255);
+    color: black;
+    line-height: 1.6;
+}   
+ .navbar{
+    background: linear-gradient(135deg,#D292F6 30%, #C068F3 100%); 
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 2rem; 
+    padding-left: 3rem;
+}
+.logo{
+    width: 250px;
+    height: auto;
+    object-fit: contain; 
+    display: block;
+}
+  .menu{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding-left: 5rem;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active{
+    color: #9C13EC;
+} 
+/* SECCIÓN PRINCIPAL DE BÚSQUEDA */
+.busqueda-section {
+    padding: 40px 0;
+    /* Usamos transparent para que se vea el fondo morado claro del body */
+    background-color: transparent; 
+}
+
+.busqueda-section h2 {
+    color: #C068F3;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* TARJETA DE FILTROS */
+.filtros-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto 30px; /* Centrado y con margen inferior */
+    display: flex;
+    align-items: flex-end; /* Alinea los items en la parte inferior (vertical) */
+}
+
+/* Flexbox para alinear inputs y botón en la misma línea */
+#filtroForm {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-end; 
+}
+
+/* Asegurar que los inputs y select ocupen el espacio restante */
+.input-group {
+    flex-grow: 1; 
+    margin-bottom: 0; /* Quitamos el margen inferior para alineación */
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* BOTÓN DE APLICAR FILTROS */
+.apply-filter-btn {
+    padding: 10px 20px;
+    height: 40px; /* Asegura que esté a la misma altura que los inputs */
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #D292F6 30%, #C068F3 100%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; /* Evita que el texto del botón se rompa */
+}
+
+.apply-filter-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* --- SECCIÓN DE RESULTADOS --- */
+.resultados-list h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.credito-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.credito-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #C068F3; /* Borde de color para destacar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.credito-item h4 {
+    color: #9C13EC;
+    margin-top: 0;
+}
+
+.btn-ver-mas {
+    display: inline-block;
+    background-color: #D292F6;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}

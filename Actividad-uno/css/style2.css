@@ -1,0 +1,154 @@
+/*ESTIOLOS GENERALES*/
+
+body{
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    background-color: rgb(244, 231, 255);
+    color: black;
+    line-height: 1.6;
+}
+.navbar{
+    background: linear-gradient(135deg,#D292F6 30%, #C068F3 100%); 
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 2rem; 
+    padding-left: 3rem;
+}
+.logo{
+    width: 250px;
+    height: auto;
+    object-fit: contain; 
+    display: block;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding-left: 5rem;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active{
+    color: #9C13EC;
+}
+/* CONTENEDOR DE LA SECCIÓN DE SOLICITUD */
+
+.solicitud-section {
+    padding: 40px 0;
+    background-color: rgb(244, 231, 255); 
+    display: flex; 
+    justify-content: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+/* TARJETA DEL FORMULARIO */
+.solicitud-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.solicitud-card h2 {
+    color: #C068F3;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.solicitud-card .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+/* GRUPOS DE FORMULARIO (FIELDSET Y LEGEND) */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+legend {
+    color: #9C13EC;
+    font-weight: 700;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #D292F6;
+    outline: none;
+}
+
+/* BOTÓN DE ENVÍO */
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #D292F6 30%, #C068F3 100%);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.1s;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.legal-text {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 15px;
+}

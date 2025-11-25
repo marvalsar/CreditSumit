@@ -1,0 +1,180 @@
+/*ESTILOS GENERALES*/
+
+body{  
+    font-family: Graphik-Regular, "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    background-color: rgb(244, 231, 255);
+    color: black;
+    line-height: 1.6;
+}
+.navbar{
+    background: linear-gradient(135deg,#D292F6 30%, #C068F3 100%); 
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 2rem; 
+    padding-left: 3rem;
+}
+.logo{
+    width: 250px;
+    height: auto;
+    object-fit: contain; 
+    display: block;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding-left: 5rem;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active{
+    color: #9C13EC;
+}
+
+/* CONTENEDOR DEL SIMULADOR */
+
+.simulador-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.simulador-card h2 {
+    color: #C068F3;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.simulador-card .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+/* GRUPOS DE ENTRADA (INPUT GROUPS) */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #D292F6;
+    outline: none;
+}
+
+/* BOTÓN DE SIMULACIÓN */
+.calculate-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #C068F3;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* BOTÓN DE BORRAR/RESETEAR */
+.reset-btn {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #C068F3; 
+    border-radius: 8px;
+    background-color: transparent; 
+    color: #C068F3; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; 
+}
+
+.reset-btn:hover {
+    background-color: #f4f4f9; /* Un color de fondo muy suave al pasar el mouse */
+    color: #9C13EC;
+}
+
+.calculate-btn:hover {
+    opacity: 0.7;
+    transform: translate(-1px);
+    box-shadow: 0 4px 15 rgba(30, 58, 138, 0.2);
+}
+
+/* SECCIÓN DE RESULTADOS */
+.resultado {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    text-align: center;
+}
+
+.resultado h3 {
+    color: #9C13EC;
+    margin-bottom: 15px;
+}
+
+.cuota-display {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #9C13EC; 
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.detalle {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.detalle span {
+    font-weight: 600;
+    color: #333;
+}

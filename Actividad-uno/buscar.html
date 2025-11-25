@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCAR</title>
+    <link rel="stylesheet" href="./css/style3.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href=" Inicio">
+                <img src="./img/logo-removebg-preview.png" class="logo" alt="">
+            </a>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="simulador.html">Simulador</a></li>
+                <li><a href="solicitar_credito.html">Solicitar crédito</a></li>
+            </ul>  
+        </div>
+    </nav>
+   <section class="busqueda-section" id="buscar">
+    <div class="container">
+        
+        <h2>Buscador de Créditos</h2>
+
+        <div class="filtros-card">
+            <form id="filtroForm">
+                
+                <div class="input-group search-group">
+                    <label for="nombre-producto">Buscar por Nombre del Producto</label>
+                    <input type="text" id="nombre-producto" placeholder="Ej: Crédito Libre Inversión, Crédito Vehículo">
+                </div>
+
+                <div class="input-group">
+                    <label for="rango-monto">Filtrar por Rango de Monto ($)</label>
+                    <select id="rango-monto">
+                        <option value="todos">Todos los montos</option>
+                        <option value="1000-5000"> $1,000 - $5,000</option>
+                        <option value="5001-20000">$5,001 - $20,000</option>
+                        <option value="20001-50000">$20,001 - $50,000</option>
+                        <option value="50001-100000">$50,001 - $100,000</option>
+                        <option value="100001-mas">Más de $100,000</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="apply-filter-btn">Aplicar Filtros</button>
+            </form>
+        </div>
+
+        <div class="resultados-list">
+            <h3>Resultados Encontrados</h3>
+            <div id="resultados-creditos" class="credito-grid">
+                <p class="placeholder-text">Use los filtros y haga clic en "Aplicar Filtros" para ver los resultados.</p>
+                
+                <div class="credito-item">
+                    <h4>Crédito Consumo</h4>
+                    <p>Monto: $5,000</p>
+                    <p>Tasa Mensual>: 1.9%</p>
+                    <a href="#" class="btn-ver-mas">Ver Detalles</a>
+                </div>
+                </div>
+        </div>
+
+    </div>
+</section> 
+</body>
+</html>
